@@ -5,6 +5,8 @@ A userscript that displays WhatsApp group IDs directly in the WhatsApp Web sideb
 ![License](https://img.shields.io/badge/license-MIT-green)
 ![Version](https://img.shields.io/badge/version-3.0.0-blue)
 
+![Demo](demo.gif)
+
 ## Why this exists
 
 [OpenClaw](https://docs.openclaw.ai) connects AI agents to messaging channels like WhatsApp. When configuring which WhatsApp groups your agent should respond in, you need to add group JIDs to the [`groups` allowlist](https://docs.openclaw.ai/channels/whatsapp#whatsapp) in `openclaw.json`:
