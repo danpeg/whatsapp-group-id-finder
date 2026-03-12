@@ -5,6 +5,22 @@ A userscript that displays WhatsApp group IDs directly in the WhatsApp Web sideb
 ![License](https://img.shields.io/badge/license-MIT-green)
 ![Version](https://img.shields.io/badge/version-3.0.0-blue)
 
+## Why this exists
+
+[OpenClaw](https://docs.openclaw.ai) connects AI agents to messaging channels like WhatsApp. When configuring which WhatsApp groups your agent should respond in, you need to add group JIDs to the [`groups` allowlist](https://docs.openclaw.ai/channels/whatsapp#whatsapp) in `openclaw.json`:
+
+```json
+{
+  "channels": {
+    "whatsapp": {
+      "groups": ["120363001234567890@g.us"]
+    }
+  }
+}
+```
+
+The problem: WhatsApp doesn't show group IDs anywhere in its UI. This script makes them visible so you can copy them directly from WhatsApp Web and paste them into your config.
+
 ## What it does
 
 - Shows the group JID (e.g. `120363001234567890@g.us`) below each group name in the chat sidebar
@@ -16,7 +32,7 @@ A userscript that displays WhatsApp group IDs directly in the WhatsApp Web sideb
 1. Install [Tampermonkey](https://www.tampermonkey.net/) (Chrome, Firefox, Edge, Safari)
 2. Click the link below to install the script:
 
-   **[Install WhatsApp Group ID Finder](https://raw.githubusercontent.com/danpeguine/whatsapp-group-id-finder/main/whatsapp-group-id-finder.user.js)**
+   **[Install WhatsApp Group ID Finder](https://raw.githubusercontent.com/danpeg/whatsapp-group-id-finder/main/whatsapp-group-id-finder.user.js)**
 
 3. Open [WhatsApp Web](https://web.whatsapp.com) — group IDs will appear below group names in the sidebar
 
